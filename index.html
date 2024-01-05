@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&family=Oswald:wght@300&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="main-nav" >
+        <div class="logo" id="home">
+            My Portfolio
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- toggle nav -->
+
+    <nav id="mobile-nav">
+        <div class="logo">
+            My Portfolio
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- section -->
+    <section id="profile">
+
+        <div class="pic__container">
+            <img class="image" src="Assests/next-02.png" alt="">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p">Hello, I'm</p>
+            <h1 class="title">Shubham</h1>
+            <p class="section-text-p2">Web developer</p>
+            <div class="btn-container">
+                <button class=" btn btn-color-1" onclick="window.open('./Assests/Shubham-resume.pdf')">Download
+                    CV
+                </button>
+
+                <button class=" btn btn-color-2" onclick="location.href='./#contact'">Contact</button>
+            </div>
+            <div class="social-container">
+                <img class="icon" src="./Assests/linkedin.png" alt=""
+                    onclick="location.href='https://www.linkedin.com/in/shubham-chaudhary-104398247/'">
+                <img class="icon" src="./Assests/github.png" alt=""
+                    onclick="location.href='https://github.com/Shubham-2323'">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- about Section -->
+    <section id="about">
+        <p class="section-text-p">Know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="pic__container2">
+                <img src="Assests/about-image.jpeg" alt="" class="about-pic">
+            </div>
+            <div class="about-detail-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="Assests/experience.png" alt="" class="icon">
+                        <h3>Experience</h3>
+                        <p>4 months <br>Web development training</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="Assests/education.png" alt="" class="icon">
+                        <h3>Education</h3>
+                        <p>Bsc Computer Science <br>Senior Secondary</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>A final year graduate who is passionate about learning and seeking experience
+                        to imply the skills learned through educational knowledge and to improvise the
+                        skills into expertise goals.
+                        <br>
+                        <br>
+                        I am always energetic and eager to learn new skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience section -->
+    <section id="experience">
+        <p class="section-text-p">My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+
+                    <h2 class="experience-title">Frontend Development :</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assests/html.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assests/css.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assests/javascript.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Learning</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assests/library.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React-JS</h3>
+                                <p>Learning</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container">
+
+                    <h2 class="experience-title">Other Tech :</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./Assests/bootstrap.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assests/github.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./Assests/adobe-photoshop-logo.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Photoshop</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- projects Section -->
+    <section id="projects">
+        <p class="section-text-p">Check my Latest</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+
+                        <img src="./Assests/Myntra-clone.png" alt="Experience icon" class="project-image" />
+                        <h2 class="experience-title project-title">
+                            Myntra Clone
+                        </h2>
+                    </div>
+                    <div class="btn-container">
+                        <button class=" btn btn-color-2 project-btn" onclick="">
+                            Github code
+                        </button>
+
+                        <button class=" btn btn-color-2"
+                            onclick="location.href='https://shubham-2323.github.io/Myntra-Clone-Js/'">Live Demo</button>
+                    </div>
+
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+
+                        <img src="./Assests/project-2.png" alt="Experience icon" class="project-image" />
+                        <h2 class="experience-title project-title">
+                            Todo List
+                        </h2>
+                    </div>
+                    <div class="btn-container">
+                        <button class=" btn btn-color-2 project-btn" onclick="">
+                            GitHub code
+                        </button>
+
+                        <button class=" btn btn-color-2" onclick="">Live Demo</button>
+                    </div>
+
+                </div>
+                <div class="details-container color-container">
+
+                    <div class="article-container">
+
+                        <img src="./Assests/weather-app.png" alt="Experience icon" class="project-image" />
+                        <h2 class="experience-title project-title">
+                            Weather App
+                        </h2>
+                    </div>
+                    <div class="btn-container">
+                        <button class=" btn btn-color-2 project-btn" onclick="">
+                            GitHub
+                        </button>
+
+                        <button class=" btn btn-color-2"
+                            onclick="location.href='https://fetching-weather404.vercel.app/'">Live Demo</button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+        <p class="section-text-p">Where to </p>
+        <h1 class="title">Contact</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="Assests/email.png" alt="" class="icon contact-icon">
+                <p><a href="mailto:example@gmail.com">Gmail</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="Assests/linkedin.png" alt="" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/shubham-chaudhary-104398247/">Linkedin</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shubham All rights reserved</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
